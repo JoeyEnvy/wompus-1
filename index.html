@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMPUS Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            background: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        nav {
+            width: 100%;
+            background: #ff69b4;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .hero {
+            text-align: center;
+        }
+        .hero img {
+            max-height: 300px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .feature {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .feature i {
+            font-size: 2em;
+            color: #ff69b4;
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #ff1493;
+        }
+        @media (max-width: 768px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        WOMPUS Retail Services
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <h1>Our Services</h1>
+            <img src="https://images.unsplash.com/photo-1535920527002-4b1d4d09b4c2" alt="Retail Services">
+            <p>Welcome to WOMPUS, where we redefine the retail experience with a blend of tradition and innovation. Our services are designed to offer top-notch customer satisfaction and an unparalleled shopping journey. Whether you're looking for the latest trends or timeless classics, WOMPUS provides it all under one roof.</p>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Online Shopping</h3>
+                <p>Experience seamless online shopping with a wide selection of products and secure payment options.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-tags"></i>
+                <h3>Exclusive Offers</h3>
+                <p>Enjoy exclusive deals and discounts available only to our loyal customers.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>Our customer support team is available round the clock to assist you with any inquiries.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Testimonials</h2>
+            <p>"WOMPUS transformed my shopping experience! The customer service is exceptional and I always find what I'm looking for." - Jane D.</p>
+            <p>"I love the exclusive deals I get as a regular shopper at WOMPUS. Highly recommend!" - Mike S.</p>
+        </section>
+        <section>
+            <h2>Gallery</h2>
+            <img src="https://images.unsplash.com/photo-1582719478181-4f7ea1a7a7e3" alt="Store Interior">
+            <img src="https://images.unsplash.com/photo-1560264280-88e3cbc4f787" alt="Shopping Bags">
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 WOMPUS. All rights reserved.</p>
+        <p>Follow us on <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></p>
+    </footer>
+</body>
+</html>

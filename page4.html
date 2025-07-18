@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOMPUS Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            background: #ff4500;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        nav {
+            width: 100%;
+            background: #ff4500;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            width: 100%;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .contact-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .contact-details div {
+            text-align: center;
+        }
+        .contact-details i {
+            font-size: 2em;
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #ff4500;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #d4410d;
+        }
+        @media (max-width: 768px) {
+            .contact-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Contact WOMPUS
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">FAQ</a>
+        <a href="#">Booking</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <h1>Get in Touch</h1>
+            <img src="https://images.unsplash.com/photo-1581091870626-3780adb17d9b" alt="Contact Us">
+            <p>We're here to help! Whether you have questions about our services or need support, feel free to reach out. Our team at WOMPUS is dedicated to ensuring you have the best experience possible.</p>
+        </section>
+        <section>
+            <h2>Contact Details</h2>
+            <div class="contact-details">
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <p>support@wompus.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 WOMPUS Ave, Retail City, RC 12345</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section>
+            <h2>Our Location</h2>
+            <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664" alt="Location">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 WOMPUS. All rights reserved.</p>
+        <p>Connect with us <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></p>
+    </footer>
+</body>
+</html>
+
+
+This contact page includes essential contact information, a form for inquiries, and visual elements to guide users. It complements the other pages by maintaining the WOMPUS brand's aesthetic and functionality.
